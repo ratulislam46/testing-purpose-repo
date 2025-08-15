@@ -4,10 +4,11 @@ import { FaDumbbell } from 'react-icons/fa';
 import { MdMenu } from 'react-icons/md';
 import { CiSearch } from 'react-icons/ci';
 import { PiShoppingCartThin } from 'react-icons/pi';
+import ResponsiveMenu from './ResponsiveMenu';
 
 
 const Navbar = () => {
-    const [open, setOpen] = useState(false)
+    const [open, setOpen] = React.useState(false)
     return (
         <>
             <nav>
@@ -52,6 +53,7 @@ const Navbar = () => {
             </nav>
 
             {/* Mobile Sidebar section  */}
+            <ResponsiveMenu open={open} />
         </>
     );
 };
