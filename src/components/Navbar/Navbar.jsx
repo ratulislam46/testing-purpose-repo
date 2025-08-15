@@ -8,7 +8,7 @@ import ResponsiveMenu from './ResponsiveMenu';
 
 
 const Navbar = () => {
-    const [open, setOpen] = React.useState(false)
+    const [open, setOpen] = useState(false)
     return (
         <>
             <nav>
@@ -41,7 +41,7 @@ const Navbar = () => {
                         <button className='text-2xl hover:bg-orange-500 hover:text-white rounded-full p-2'>
                             <PiShoppingCartThin />
                         </button>
-                        <button className='font-semibold rounded-md border-2 px-6 py-2 text-orange-500 border-orange-500 hover:text-white hover:bg-orange-500 hidden md:block'>
+                        <button className='font-semibold rounded-md border-2 px-6 py-2 primary-color border-orange-500 hover:text-white hover:bg-orange-500 hidden md:block'>
                             Login
                         </button>
                     </div>
